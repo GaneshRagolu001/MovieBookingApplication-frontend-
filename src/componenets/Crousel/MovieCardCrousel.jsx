@@ -70,13 +70,13 @@ export default function MovieCardCarousel() {
                 pagination={{ clickable: true }}
                 navigation={false}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="rounded-lg h-[54vh]  lg:h-[80vh] border "
+                className="rounded-lg h-[54vh]  lg:h-[92vh] "
             >
                 {movies.map((movie, index) => (
 
-                    <SwiperSlide key={index} className="flex justify-center">
-                        <div className="bg-white rounded-lg shadow-lg p-4 w-full lg:h-[30vw] lg:mx-auto">
-                            <img src={movie.image} alt={movie.title} className="w-full h-64 object-cover rounded-lg lg:h-[23vw]" />
+                    <SwiperSlide key={index} className="flex justify-center ">
+                        <div className="bg-white rounded-lg shadow-lg p-4 w-full lg:h-[85vh] lg:w-[26vw] lg:mx-auto ">
+                            <img src={movie.image} alt={movie.title} className="w-full h-64 object-cover rounded-lg lg:h-[70vh]" />
                             <h2 className={"text-center text-xs font-semibold mt-4 "}>{movie.title}</h2>
                             <div className="flex justify-center mt-2 space-x-2">
                                 {movie.tags.map((tag, idx) => (

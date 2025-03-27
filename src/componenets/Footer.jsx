@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className=" border-t border-[#8F98AA] py-6 mt-10 h-[35vh]">
+        <footer className=" border-t border-[#8F98AA] py-6 mt-10 h-[35vh] mx-10">
             <div className="container mx-auto flex flex-col items-center text-center gap-3">
                 <p className="text-lg font-semibold">Cine Seat</p>
                 <p className="text-sm text-gray-400">Your ultimate movie destination</p>

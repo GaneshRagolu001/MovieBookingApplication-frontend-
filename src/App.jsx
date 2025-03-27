@@ -3,6 +3,7 @@ import Footer from './componenets/Footer'
 import Header from './componenets/Header'
 import HomePage from './componenets/HomePage'
 import Movies from './componenets/Movies'
+import Shows from './componenets/Shows'
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
   return (
     <>
       <Header />
-      <HomePage />
+      {/* <HomePage /> */}
       {/* <Movies /> */}
+      <Shows />
       <Footer />
     </>
   )

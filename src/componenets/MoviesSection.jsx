@@ -96,10 +96,10 @@ function MoviesSection() {
                 pagination={{ clickable: true }}
                 navigation={false}
                 modules={[Pagination, Navigation]}
-                className="overflow-hidden rounded-lg h-[70vh] w-full py-4"
+                className="overflow-hidden rounded-lg h-[90vh] w-full py-4 "
             >
                 {MOVIES.map((movie, index) => (
-                    <SwiperSlide key={index} className="p-2 ">
+                    <SwiperSlide key={index} className="p-2 lg:pt-6">
                         <MovieCard movie={movie} />
                     </SwiperSlide>
                 ))}

@@ -118,12 +118,13 @@ const MOREMOVIES = [
         "releaseDate": "2014-10-10",
         "poster": "https://image.tmdb.org/t/p/w500/oPxnRhyAIzJKGUEdSiwTJQBaHXD.jpg"
     }
+    
 
 
 ]
 function Movies() {
     return (
-        <div className='flex flex-wrap gap-3 justify-center'>
+        <div className='flex flex-wrap gap-10 lg:mt-10 justify-center '>
             {MOREMOVIES.map((movie,index) => <div key={index}><MovieCard movie={movie} /></div>)}
         </div>
     )

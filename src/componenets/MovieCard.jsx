@@ -2,17 +2,17 @@ import Button from "./Button";
 
 export default function MovieCard({ movie }) {
     return (
-        <div className=" flex-grow w-full max-w-[320px] sm:max-w-[380px] md:max-w-[280px] lg:max-w-[240px] xl:max-w-[220px] shadow-md bg-white rounded-2xl overflow-hidden transform transition-all hover:scale-105">
+        <div className=" flex-grow w-full lg:h-[82vh] shadow-md bg-white rounded-2xl overflow-hidden transform transition-all hover:scale-105">
             {/* Movie Poster */}
             <img
                 src={movie.poster}
                 alt={movie.title}
-                className="w-full h-[300px] sm:h-[350px] md:h-[300px] lg:h-[280px] xl:h-[260px] object-cover rounded-t-2xl"
+                className="w-full lg:w-[40vh] object-cover rounded-t-2xl"
             />
 
             {/* Movie Details */}
-            <div className="p-4">
-                <h2 className={`font-semibold text-gray-800 ${movie.title.length < 30 ? "text-lg" : "text-sm"}`}>
+            <div className="p-4 ">
+                <h2 className={`font-semibold text-gray-800  ${movie.title.length < 30 ? "text-lg" : "text-[0.67rem]"}`}>
                     {movie.title}
                 </h2>
                 <p className="text-gray-500 text-xs mt-1">{movie.genre}</p>
