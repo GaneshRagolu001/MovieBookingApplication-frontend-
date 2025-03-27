@@ -2,7 +2,7 @@ import React from 'react'
 import { MOVIES } from './MoviesSection'
 import MovieCard from './MovieCard'
 
-const MOREMOVIES = [
+export const MOREMOVIES = [
     ...MOVIES,
     {
         "title": "Forrest Gump",
